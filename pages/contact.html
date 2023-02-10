@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="../image.css">
+</head>
+
+<body>
+    <!-- Make nav bar -->
+    <!-- I need to order the layout properly -->
+    <div class="nav">
+
+        <img class="logo" src="../images/Namelogo.svg" alt="Logo">
+        <div class="container">
+            <!-- Run along flex -->
+            <a href="index.html">Home</a>
+            <a href="demo.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="save.html">SaveLater</a>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <!-- Currently unresponsive to  screen sizes -->
+        <h2 style="text-align:center">Feedback is always helps, share your thoughts.</h2>
+        <!-- Div is not responsive when subject window is extended. -->
+        <!-- Set a card so content is easy to see. -->
+        <div class="card">
+            <h3>Contact Me</h3>
+            <!-- Contact form -->
+            <form>
+                <!-- Once the form is complete the information should be sent to my email address -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name..">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Your email..">
+                <label for="subject">Subject:</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+
+            </form>
+            <!-- Radio buttons -->
+            <form style="padding-top: 30px;">
+                <label>What is your favorite fruit?</label>
+                <input type="radio">
+                <label>Mango</label>
+                <input type="radio">
+                <label>Apple</label>
+                <input type="radio">
+                <label>Pear</label>
+                <input type="radio">
+                <label>Other</label>
+                <!-- After submit sent alert saying bye favFruit -->
+                <!-- Submit move to right side -->
+                <input type="submit" value="Submit">
+            </form>
+            <a href="hkbenjamin1994@gmail.com">My Email</a>
+        </div>
+
+    </div>
+    <div class="target">
+        <!-- This will add the liked images from the local storage -->
+    </div>
+    <footer>
+        <p style="text-align: center;">Created by H.K.Benjamin ©</p>
+    </footer>
+</body>
+
+</html>

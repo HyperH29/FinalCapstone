@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save for later page</title>
+    <link rel="stylesheet" href="../image.css">
+    <script src="../scripts/save.js"></script>
+</head>
+
+
+<body>
+    <div class="nav">
+        <!-- This logo is not in the correct position it should not be so close to the button. -->
+        <img class="logo" src="../images/Namelogo.svg" alt="Logo">
+        <div class="container">
+            <!-- Run along flex -->
+            <a href="index.html">Home</a>
+            <a href="demo.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a id="save" href="save.html">SaveLater</a>
+
+        </div>
+    </div>
+    <div style="margin:auto">
+
+        <h1 style="padding-left: 50px; padding-bottom: 50px;">Save For Later</h1>
+        <ul id="saveList">
+            <!-- Add Content -->
+        </ul>
+        <form class="comment-form">
+            <!-- Comment form -->
+            <label for="comment">Comment:</label>
+            <input type="text" id="comment" placeholder="Text here" value="CommentThis">
+            <button id="submit">Send</button>
+            <!-- This will then send to the local storage  -->
+        </form>
+        <h1 id="check"></h1>
+        <a style="padding-left: 50px;" href="demo.html">Back</a>
+    </div>
+    <footer>
+        <p style="text-align: center;">Created by H.K.Benjamin ©</p>
+    </footer>
+</body>
+
+
+</html>

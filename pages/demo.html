@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <!-- Link style sheet to page -->
+    <link rel="stylesheet" href="../image.css">
+    <!-- Linked js to page -->
+    <!-- Defer will load js after the html has loaded. -->
+    <script src="../scripts/gallery.js" defer></script>
+</head>
+
+<body>
+    <!-- Create nav bar which will be the same on all pages. -->
+    <div class="nav">
+        <!-- Logo with animation -->
+        <img class="logo" src="../images/Namelogo.svg" alt="Logo">
+        <!-- Set container so I can target the buttons themselves. -->
+        <div class="container">
+            <!-- Run along flex -->
+            <!-- Get rid of underlines -->
+            <a href="index.html">Home</a>
+            <a href="demo.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="save.html">SaveLater</a>
+
+        </div>
+    </div>
+    <!-- Section to store our photos -->
+    <section aria-label="new photo">
+        <!-- Make a div to store our carousel -->
+        <!-- Add data-carousel to make it a working carousel -->
+        <div class="carousel" data-carousel>
+            <!-- Add buttons to control the carousel -->
+            <button class="carousel-button prev" data-carousel-button="prev">&#8592;</button>
+            <button class="carousel-button next" data-carousel-button="next">&#8594;</button>
+            <!-- Once the comment is activated, display a prompt and save to storage. -->
+            <button class="carousel-button save" id="save"><img alt="Save"
+                    src=https://img.icons8.com/material-outlined/30/null/wish-list.png></button>
+            <!-- Swap values later -->
+            <!-- <a href="save.html" class="carousel-button comment"><img alt="Comment"
+                    src=https://img.icons8.com/ios-glyphs/30/null/comments.png></a> -->
+            <button class="carousel-button like" id="likebtn">
+                <img alt="Like" src=https://img.icons8.com/metro/30/null/filled-like.png></button>
+            <!-- Made a list to store all are photos for carousel. -->
+            <ul data-slides>
+                <li class="slide" data-active>
+                    <img id="myImage" src="../images/THE_PS2.png" alt="Playstation 2 Render">
+                </li>
+                <li class="slide">
+                    <img src="../images/tHE_BUILDING_2.png" alt="building Render">
+                </li>
+                <li class="slide">
+                    <img src="../images/The_Front_Room.png" alt="Room Render">
+                </li>
+                <li class="slide">
+                    <img src="../images/PokeBall_2.png" alt="Pokeball">
+                </li>
+                <li class="slide">
+                    <img src="../images/Diamond.png" alt="Diamond">
+                </li>
+                <li class="slide">
+                    <img src="../images/Otherhallway1Render.png" alt="Hallway">
+                </li>
+                <li class="slide">
+                    <img src="../images/GL3.png" alt="Long Ago">
+                </li>
+                <li class="slide">
+                    <img src="../images/Human1.png" alt="Human">
+                </li>
+                <li class="slide">
+                    <img src="../images/Lampscene.png" alt="Landscape">
+                </li>
+                <li class="slide">
+                    <img src="../images/Server_mk1.png" alt="Server Room">
+                </li>
+                <li class="slide">
+                    <img src="../images/the_doughnut_p2.png" alt="Donut">
+                </li>
+                <li class="slide">
+                    <img src="../images/To_E.a.r.t.h_2.png" alt="Mass Effect Ship flying to earth">
+                </li>
+                <li class="slide">
+                    <img src="../images/Marked_Swordp5.png" alt="Halt">
+                </li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+
+</html>
